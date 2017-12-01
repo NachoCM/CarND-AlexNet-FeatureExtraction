@@ -18,12 +18,9 @@ print("Data file contains "+str(nsamples)+" samples.")
 
 
 # TODO: Split data into training and validation sets.
-ntrain=int(nsamples*0.15)
-nvalid=int(nsamples*0.05)
-ntest=nsamples-ntrain-nvalid
-X_train, y_train = data['features'][0:ntrain], data['labels'][0:ntrain]
-X_valid, y_valid = data['features'][ntrain:ntrain + nvalid], data['labels'][ntrain:ntrain + nvalid]
-X_test, y_test = data['features'][ntrain+nvalid:nsamples], data['labels'][ntrain+nvalid:nsamples]
+X_train, X_test, y_train, y_test = train_test_split(data['features'],data['labels'], test_size=0.10)
+X_train, X_valid, y_train, y_valid = train_test_split(X_train,y_train,test_size=0.07)
+
 
 def preprocess(x):
     x=(x-np.mean(x,axis=(1,2,3),keepdims=True))/np.std(x,axis=(1,2,3),keepdims=True)
