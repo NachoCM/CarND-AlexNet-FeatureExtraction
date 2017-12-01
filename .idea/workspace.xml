@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95fc6bcd-454b-4b49-a1de-023014392d78" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature_extraction.py" afterPath="$PROJECT_DIR$/feature_extraction.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagenet_inference.py" afterPath="$PROJECT_DIR$/imagenet_inference.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/traffic_sign_inference.py" afterPath="$PROJECT_DIR$/traffic_sign_inference.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train_feature_extraction.py" afterPath="$PROJECT_DIR$/train_feature_extraction.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,7 +28,7 @@
       <file leaf-file-name="feature_extraction.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feature_extraction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
+            <state relative-caret-position="120">
               <caret line="29" column="14" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="29" selection-end-column="14" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -43,8 +40,8 @@
       <file leaf-file-name="train_feature_extraction.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/train_feature_extraction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="74" column="81" lean-forward="false" selection-start-line="74" selection-start-column="81" selection-end-line="74" selection-end-column="81" />
+            <state relative-caret-position="435">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -338,7 +335,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/feature_extraction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
+        <state relative-caret-position="120">
           <caret line="29" column="14" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="29" selection-end-column="14" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -348,8 +345,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/train_feature_extraction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="74" column="81" lean-forward="false" selection-start-line="74" selection-start-column="81" selection-end-line="74" selection-end-column="81" />
+        <state relative-caret-position="435">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

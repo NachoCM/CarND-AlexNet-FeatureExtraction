@@ -25,6 +25,13 @@ X_train, y_train = data['features'][0:ntrain], data['labels'][0:ntrain]
 X_valid, y_valid = data['features'][ntrain:ntrain + nvalid], data['labels'][ntrain:ntrain + nvalid]
 X_test, y_test = data['features'][ntrain+nvalid:nsamples], data['labels'][ntrain+nvalid:nsamples]
 
+def preprocess(x):
+    x=(x-np.mean(x,axis=(1,2,3),keepdims=True))/np.std(x,axis=(1,2,3),keepdims=True)
+
+preprocess(X_train)
+preprocess(X_valid)
+preprocess(X_test)
+
 print("Training set with "+str(len(X_train))+" samples")
 print("Validation set with "+str(len(X_valid))+" samples")
 print("Test set with "+str(len(X_test))+" samples")
