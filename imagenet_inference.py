@@ -20,14 +20,22 @@ sess.run(init)
 
 # Read Images
 im1 = (imread("poodle.png")[:, :, :3]).astype(np.float32)
+im1 = (imread("IMG_0025.jpg")[:, :, :3]).astype(np.float32)
 im1 = im1 - np.mean(im1)
 
 im2 = (imread("weasel.png")[:, :, :3]).astype(np.float32)
+im2 = (imread("IMG_0320.jpg")[:, :, :3]).astype(np.float32)
 im2 = im2 - np.mean(im2)
+
+im3 = (imread("IMG_0425.jpg")[:, :, :3]).astype(np.float32)
+im3 = im3 - np.mean(im3)
+
+im4 = (imread("IMG_1490.jpg")[:, :, :3]).astype(np.float32)
+im4 = im4 - np.mean(im4)
 
 # Run Inference
 t = time.time()
-output = sess.run(probs, feed_dict={x: [im1, im2]})
+output = sess.run(probs, feed_dict={x: [im1, im2, im3, im4]})
 
 # Print Output
 for input_im_ind in range(output.shape[0]):
